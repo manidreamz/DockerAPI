@@ -10,7 +10,7 @@ RUN dotnet restore
 COPY . ./
 RUN dotnet publish -c Release -o out
 
-# Generate runtime image
+# Generate runtime image add comments
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2
 WORKDIR /app
 EXPOSE 80
